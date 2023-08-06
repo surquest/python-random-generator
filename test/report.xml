@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="9" time="6.991" timestamp="2023-08-06T14:20:31.441594" hostname="2e88e249aa5b"><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_get_current_timestamp" time="0.003" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_random_charset_series" time="0.003" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_timestamped_random_string" time="0.003"><failure message="AssertionError: Expected string: 'x', got: gechEuKq&#10;assert 'x' == 'gechEuKq'&#10;  - gechEuKq&#10;  + x">self = &lt;test_randomizer.TestRandomizer object at 0x7fcd6711d590&gt;
+
+    def test_generate_timestamped_random_string(self):
+    
+        randomizer = Randomizer()
+        string = randomizer.generate_timestamped_random_string(8)
+&gt;       assert "x" == string, F"Expected string: 'x', got: {string}"
+E       AssertionError: Expected string: 'x', got: gechEuKq
+E       assert 'x' == 'gechEuKq'
+E         - gechEuKq
+E         + x
+
+random_string_generator/test_randomizer.py:31: AssertionError</failure></testcase><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_timestamped_random_string_value_error" time="0.002" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_timestamped_random_string_uniqueness_2" time="0.001" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_timestamped_random_string_uniqueness_1000" time="0.019" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_timestamped_random_string_uniqueness_100000" time="1.841" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_generate_timestamped_random_string_uniqueness" time="3.507" /><testcase classname="random_string_generator.test_randomizer.TestRandomizer" name="test_convert_charset_to_integer" time="0.001" /></testsuite></testsuites>
