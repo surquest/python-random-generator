@@ -21,7 +21,7 @@ The key advantage of this package is the ability to generate completely unique a
 
 ```python
 # import the randomizer
-from surquest.utils.random_string_generator import Randomizer
+from surquest.utils.randomizer import Randomizer
 
 # Generate a timestamped random string with a length of 8 characters
 random_string = Randomizer.generate_timestamped_random_string(
@@ -43,7 +43,7 @@ You are also able to submit your own set of characters to be used for the random
 
 ```python
 import string
-from surquest.utils.random_string_generator import Randomizer
+from surquest.utils.randomizer import Randomizer
 
 # Generate a timestamped random string with a length of 8 characters
 
@@ -58,7 +58,7 @@ random_string = randomizer.generate_timestamped_random_string(10)
 The Randomizer class can be also used for conversion of integers to strings based on given set of characters.
 
 ```python
-from surquest.utils.random_string_generator import Randomizer
+from surquest.utils.randomizer import Randomizer
 
 randomizer = Randomizer()
 

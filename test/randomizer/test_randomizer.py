@@ -1,6 +1,6 @@
 import pytest
 import datetime as dt
-from surquest.utils.random_string_generator import Randomizer
+from surquest.utils.randomizer import Randomizer
 
 class TestRandomizer:
 
@@ -28,7 +28,6 @@ class TestRandomizer:
 
         randomizer = Randomizer()
         string = randomizer.generate_timestamped_random_string(8)
-        assert "x" == string, F"Expected string: 'x', got: {string}"
         assert isinstance(string, str) == True, F"Expected string, got: {type(string)}"
         assert len(string) == 8, F"Expected string length: 8, got: {len(string)}"
 
