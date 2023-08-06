@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "surquest-utils-random-string-generator"
-version = "0.0.1rc1"
+version = "0.0.1"
 description = "Randimizer generates timstamped unique random strings with minimal collision probability."
 authors = [
     {name= "Michal Švarc", email= "michal.svarc@surquest.com"}
